@@ -1,60 +1,46 @@
-# Python CRUD Application for [Business Domain]
+# Python CRUD Application for 'Employees Data' in the Company
 
-A comprehensive Python application for managing [Data Entity] data with Create, Read, Update, and Delete (CRUD) operations.
+A comprehensive Python application for managing 'Employees Data' in the Company with Create, Read, Update, and Delete (CRUD) operations.
 
 ## Business Understanding
 
-This project caters to the [Industry/Business Domain] industry, specifically addressing the need to manage [Data Entity] data efficiently. [Data Entity] plays a crucial role in [Explain the importance of data entity in business processes].
+This project focused on the process of recruiting new employees in the company, specifically addressing the need to manage employee data efficiently. With this program, a company's Human Resource Development will find it easy to access and update data by processing the identity data of prospective new employees.
 
 **Benefits:**
 
 * Improved data accuracy and consistency
 * Streamlined data management processes
 * Enhanced decision-making through readily available data
-* ... (List additional benefits relevant to the business)
+* Make it easier for companies to access data
 
 **Target Users:**
 
-This application is designed for [Target Users] (e.g., sales representatives, inventory managers, customer support agents) within the organization to facilitate their [Tasks/Activities] related to [Data Entity].
+This application is designed for company's Human Resource Development to facilitate their division's work program related to the process of recruiting new employees at the company.
 
 ## Features
 
 * **Create:**
-    * Add new [Data Entity] entries with essential details like [List relevant fields].
-    * Implement validation rules to ensure data integrity (if applicable, e.g., unique identifiers, data type checks).
+    * Add new employees data entries with essential details data identity like NIK, name, age, gender, domicile, and position applied for resource development in the recruitment process of a company.
+    * Implement validation rules to ensure data integrity such as checking data types and catching errors in programs.
 * **Read:**
-    * Search and retrieve specific [Data Entity] records by applying filters based on [Searchable fields].
-    * Display comprehensive information for each [Data Entity] in a user-friendly format.
-    * Integrate pagination and sorting capabilities for large datasets (if applicable).
+    * Search and retrieve specific new employees data records by applying filters based on NIK as primary key.
+    * Display comprehensive information for each new employee in a user-friendly format.
 * **Update:**
-    * Modify existing [Data Entity] data to reflect changes in [Attributes/Properties].
+    * Modify existing new employee data to reflect changes in NIK, name, age, gender, domicile and position applied.
     * Provide clear confirmation or error messages based on update success or failure.
 * **Delete:**
-    * Allow for the removal of unwanted [Data Entity] records with appropriate authorization checks (if applicable).
-    * Implement soft delete functionality to prevent permanent data loss (optional, depending on business needs).
-    * Consider offering data archiving capabilities (optional).
-* **Security:**
-    * Implement user authentication and authorization mechanisms (if sensitive data is involved) to control access to different CRUD operations.
-    * ... (Specify additional security features as needed)
-* **Reporting:**
-    * Generate reports or summaries based on [Data Entity] data to support [Business Functions] (optional).
-    * Export data in various formats (e.g., CSV, Excel) for further analysis (optional).
+    * Allow for the removal of unwanted new employees data records with appropriate authorization checks.
 
 ## Installation
 
 1. **Prerequisites:**
-    * Python version (specify the required version)
-    * Additional dependencies (list any required packages)
+    * Python version 3.12.5.
 
 2. **Installation:**
     ```bash
-    git clone https://github.com/<your-username>/<your-repo-name>.git
-    cd <your-repo-name>
-    pip install -r requirements.txt  # If using a requirements.txt file
+    git clone https://github.com/melinayu>/Python-CRUD-Program.git
+    cd Python-CRUD-Program
     ```
-
-3. **Database Setup (if applicable):**
-    Follow specific instructions for configuring your database connection, aligning with the business's chosen database management system.
 
 ## Usage
 
@@ -64,17 +50,20 @@ This application is designed for [Target Users] (e.g., sales representatives, in
     ```
 
 2. **CRUD Operations:**
-    * **Create:** Add a new [Data Entity] record, for example, a new customer in a customer management system, providing details like name, contact information, and preferences.
-    * **Read:** Search and retrieve customer information by name, ID, or other relevant criteria.
-    * **Update:** Modify customer details, such as updating their address or contact details.
-    * **Delete:** Remove a customer record from the system (with appropriate authorization, if applicable).
+    * **Create:** Add a new employees data record, for example there is a new employee in a particular division, providing details like NIK, name, age, gender, domicile, and position applied.
+    * **Read:** Search and retrieve employee information by NIK, name, age, gender, domicile, and position applied.
+    * **Update:** Modify existing new employee data details, such as updating their age or position details.
+    * **Delete:** Remove a employee record from the system for those who fail to reach the final stage.
 
 ## Data Model
-This project utilizes a [Data Structure] (e.g., relational database, JSON documents) to represent [Data Entity] data. The following fields are typically stored:
-   * [Field 1]: (Data type) - Description of the field's purpose in the business context.
-   * [Field 2]: (Data type) - Description of the field's purpose in the business context.
-   * ... (List all relevant fields)
+This project utilizes a dictionary in list on python to represent new employees data. The following fields are typically stored:
+   * NIK: (int) - Primary key in new employees data and to describe the identity of the new employee.
+   * Name: (str) -  The name of the new employee.
+   * Age: (int) -  The age of the new employee (up to 2 digits and less than 31).
+   * Gender: (str) -  The gender of the new employee (male/female).
+   * Domicile: (str) -  The current residence address of the new employee.
+   * Position: (str) -  Parts of work units within the company that have different duties and responsibilities.
 
 ## Contributing
-We welcome contributions to this project! Please feel free to open a pull request, sent to [your_email] or submit an issue if you encounter any problems or have suggestions for improvements.
+We welcome contributions to this project! Please feel free to open a pull request, sent to melinayusafitri@gmail.com or submit an issue if you encounter any problems or have suggestions for improvements.
 
